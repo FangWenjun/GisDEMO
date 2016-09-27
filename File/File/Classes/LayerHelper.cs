@@ -150,7 +150,7 @@ namespace File.Classes
                 {
                     var utils = new Utils();
                     ShapefileCategory ct = sf.Categories.Add("0");
-                    ct.DrawingOptions.FillType = tkFillType.ftStandard;
+                    ct.DrawingOptions.FillType = tkFillType.ftGradient;
                     ct.DrawingOptions.FillColor = utils.ColorByName(tkMapColor.Green);
                     sf.set_ShapeCategory(0, 0);
                 }

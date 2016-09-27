@@ -99,7 +99,7 @@ namespace File
             //    File.HideTooltip();
             //}
 
-            bool hasShapefile = false;
+      //      bool hasShapefile = false;
        //     int layerHandle = App.Legend.SelectedLayer;
             //bool hasLayer = layerHandle != -1;
             //if (hasLayer)

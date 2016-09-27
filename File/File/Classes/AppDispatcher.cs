@@ -90,6 +90,7 @@ namespace File.Classes
                     //Editor.RunCommand(EditorCommand.CreateLayer);
                     return true;
                 case AppCommand.LoadData:
+                    //加载温度数据
                     GisPoint.connectToDB(Constants.dbname);
                     GisPoint.readData();
                     GisPoint.SortList();

@@ -93,6 +93,16 @@ namespace File.Classes
             if (sf != null)
             {
                 Labels labels = sf.Labels;
+                labels.FontSize = 15;
+                labels.FontBold = true;
+                labels.FrameVisible = true;
+                labels.FrameType = tkLabelFrameType.lfRectangle;
+                labels.AutoOffset = false;
+                labels.OffsetX = 40;
+
+                LabelCategory cat = labels.AddCategory("Red");
+                cat.FontColor = 255;
+
                 double projX = 0.0;
                 double projY = 0.0;
                 App.Map.PixelToProj(e.x, e.y, ref projX, ref projY);
@@ -102,8 +112,16 @@ namespace File.Classes
                 if (sf.SelectShapes(ext, 0.00005, SelectMode.INTERSECTION, ref result) && (p == 0))
                 {
                     string temp = GisPoint.readOneData(projX, projY);
-                    labels.AddLabel(temp, projX, projY, 0.0, -1);
-                    //    sf.Labels.TextRenderingHint = tkTextRenderingHint.SystemDefault;
+                    string tempx = temp + "℃";
+                    if(Convert.ToDouble(temp)>=50)
+                    {
+                        labels.AddLabel(tempx, projX, projY, 0.0, 0); 
+                    }
+                    else
+                    {
+                        labels.AddLabel(tempx, projX, projY, 0.0, -1); 
+                    }
+                    
                     p = 1;
 
                 }
