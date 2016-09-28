@@ -55,9 +55,6 @@
     <Reference Include="AxInterop.MapWinGIS">
       <HintPath>.\AxInterop.MapWinGIS.dll</HintPath>
     </Reference>
-    <Reference Include="GisSet">
-      <HintPath>..\..\GisSet\GisSet\bin\Debug\GisSet.dll</HintPath>
-    </Reference>
     <Reference Include="Interop.MapWinGIS">
       <HintPath>.\Interop.MapWinGIS.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>

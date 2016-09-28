@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AxMapWinGIS;
 using MapWinGIS;
-using GisSet;
 using File;
 
 namespace GisMap

@@ -54,7 +54,7 @@ namespace File.Classes
         //创建与数据库的连接
         public static void connectToDB(string dbPath)
         {
-            m_dbConnection = new SQLiteConnection("Data Source=" + dbPath + ";Version=3;");
+            m_dbConnection = new SQLiteConnection(dbPath);
             m_dbConnection.Open();
         }
 
